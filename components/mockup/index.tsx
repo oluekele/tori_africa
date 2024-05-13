@@ -1,0 +1,45 @@
+import Image from 'next/image'
+import React from 'react'
+import './Mockup.css'
+import { FaChevronRight } from "react-icons/fa6";
+import LeftFlower from '@/public/assets/rev_home8_7.png'
+import LeftDown from '@/public/assets/rev_home8_1.png'
+import down from '@/public/assets/rev_home8_4.png'
+import CenterFlower from '@/public/assets/rev_home8.png'
+import CenterFlowerRight from '@/public/assets/rev_home8_2.png'
+import vector from '@/public/assets/revslider_vector.png'
+import bg from '@/public/assets/rev_bg.png'
+
+const Mockup = () => {
+  return (
+    <div className='main'>
+      <div className='flex items-center justify-between mx-auto w-[90%] '>
+        <div>
+          <Image src={bg} width={100} height={100} alt='down flower' className='bg'/>
+        </div>
+        <Image src={LeftFlower} width={100} height={100} alt='down flower' className='absolute top-0 left-[-25px]'/>
+        <Image src={LeftDown} width={200} height={100} alt='down flower' className='absolute top-[75%] left-[-10px]'/>
+        <Image src={down} width={100} height={100} alt='down flower' className='absolute top-[77%] left-[35%]'/>
+        <div className='relative my-[50px] w-[45%]'>
+          <Image src={CenterFlower} width={600} height={100} alt='down flower' className='z-10'/>
+          <Image src={CenterFlowerRight} width={100} height={100} alt='down flower' className='absolute top-[23%] left-[74%] z-[-1] opacity-100'/>
+        </div>
+        <div className='flex-col items-center justify-center w-[50%]'>
+          <h2 className='font-bold text-[16px] text-[#f4402f] text-center mb-10'>BEST BOOKSHELF IN TOWN</h2>
+          <div className='text-center mb-10 relative'>
+            <h2 className='font-bold text-[55px] lg:leading-[60px] w-[80%] text-center mx-auto mb-4 '>Fiction Classics for Fall & Winter Reading</h2>
+            <Image src={vector} width={250} height={100} alt='down flower' className='absolute top-[28%] left-[15%] z-[-1] opacity-100'/>
+        
+            <p className='font-bold text-[16px] '>Limited Time Only. While Supplies Last!</p>
+          </div>
+          <div className='w-full flex items-center justify-center'>
+            <button className='w-[150px] py-4 flex items-center justify-center gap-2 bg-[#fff] rounded-full cursor-pointer'>Shop Now <FaChevronRight size={15} className='text-[#f4402f]'/></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+export default Mockup
