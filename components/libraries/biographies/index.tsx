@@ -16,41 +16,41 @@ const DotSlide = () => {
     
     console.log(element)
     
-    // dot12!.addEventListener('click', ()=>{
-    //   setResult(-2)
-    //     dot12!.style.width = '16px'
-    //     dot13!.style.width = '6px'
-    //     dot14!.style.width = '6px'
-    //     dot12!.style.backgroundColor = '#f65d4e'
-    //     dot13!.style.backgroundColor = '#e6e6e6'
-    //     dot14!.style.backgroundColor = '#e6e6e6'
-    //     console.log(result)
+    dot12!.addEventListener('click', ()=>{
+      setResult(-2)
+        dot12!.style.width = '16px'
+        dot13!.style.width = '6px'
+        dot14!.style.width = '6px'
+        dot12!.style.backgroundColor = '#f65d4e'
+        dot13!.style.backgroundColor = '#e6e6e6'
+        dot14!.style.backgroundColor = '#e6e6e6'
+        console.log(result)
         
       
-    //  })
-    // dot13!.addEventListener('click', ()=>{
+     })
+    dot13!.addEventListener('click', ()=>{
       
-    //   setResult(-1)
-    //     dot13!.style.width = '16px'
-    //     dot12!.style.width = '6px'
-    //     dot14!.style.width = '6px'
-    //     dot13!.style.backgroundColor = '#f65d4e'
-    //     dot12!.style.backgroundColor = '#e6e6e6'
-    //     dot14!.style.backgroundColor = '#e6e6e6'
-    //     console.log(result)
+      setResult(-1)
+        dot13!.style.width = '16px'
+        dot12!.style.width = '6px'
+        dot14!.style.width = '6px'
+        dot13!.style.backgroundColor = '#f65d4e'
+        dot12!.style.backgroundColor = '#e6e6e6'
+        dot14!.style.backgroundColor = '#e6e6e6'
+        console.log(result)
       
-    // })
-    // dot14!.addEventListener('click', ()=>{
-    //   clearTimeout('')
-    //   setResult(0)
-    //     dot14!.style.width = '16px'
-    //     dot12!.style.width = '6px'
-    //     dot13!.style.width = '6px'
-    //     dot14!.style.backgroundColor = '#f65d4e'
-    //     dot12!.style.backgroundColor = '#e6e6e6'
-    //     dot13!.style.backgroundColor = '#e6e6e6'
-    //     console.log(result)
-    // })
+    })
+    dot14!.addEventListener('click', ()=>{
+      clearTimeout('')
+      setResult(0)
+        dot14!.style.width = '16px'
+        dot12!.style.width = '6px'
+        dot13!.style.width = '6px'
+        dot14!.style.backgroundColor = '#f65d4e'
+        dot12!.style.backgroundColor = '#e6e6e6'
+        dot13!.style.backgroundColor = '#e6e6e6'
+        console.log(result)
+    })
     setInterval(() => {
       if(result === -2){
         setResult(-1)
