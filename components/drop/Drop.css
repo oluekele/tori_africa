@@ -1,0 +1,18 @@
+ul{
+  width: 200px;
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+li:hover{
+  color: #f65d4e;
+}
+
+.bg{
+  background-image: url('https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/banner-menu.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}

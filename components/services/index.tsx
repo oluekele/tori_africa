@@ -14,12 +14,12 @@ const Services = () => {
     {id: 5, name: 'Easy Returns', description: 'Within 30 days', icon: <BsFillBoxSeamFill size={40}/>},
   ]
   return (
-    <div className='w-[100%] lg:w-[90%] mx-auto flex items-center justify-between  py-10 border-b-[0.3px]'>
+    <div className='w-[100%]  mx-auto flex items-center gap-2  py-10 border-b-[0.3px] overflow-hidden flex-wrap'>
       {service.map((item)=>(
         <>
-          <div key={item.id} className='w-[95%] mx-auto flex items-center justify-between'>
-            <div className='flex items-center gap-4 group'>
-              <div className='bg-[#F65D4E;] w-[70px] h-[70px] rounded-full flex items-center justify-center p-2 text-[#fff] group-hover:scale-75 transition ease-in-out delay-50 duration-300'>
+          <div key={item.id} className='mb-3 pl-10 flex  items-center gap-4'>
+            <div className='flex w-full items-center gap-4 group '>
+              <div className='bg-[#F65D4E;] w-[50px] h-[50px] rounded-full flex items-center justify-center p-2 text-[#fff] group-hover:scale-75 transition ease-in-out delay-50 duration-300'>
                 {item.icon}
               </div>
               <div>

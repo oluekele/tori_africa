@@ -5,14 +5,11 @@ import React from 'react'
 import { IoLocationOutline } from "react-icons/io5";
 import classNames from "classnames";
 import { FaChevronDown } from "react-icons/fa";
-
-
-
-
-
+import { usePathname } from 'next/navigation';
 
 
 const Navbar = () => {
+  const CurrentPath =  usePathname();
   const nav = [
     {id: 1, href: '/', text: 'Home',},
     {id: 2, href: '/shop', text: 'Shop', icon: <FaChevronDown size={10}/>},
@@ -27,14 +24,28 @@ const Navbar = () => {
         <IoLocationOutline />
         <Link href='/' className='underline'>Find a Book Store</Link>
       </div>
-      <div className='flex items-center gap-4'>
-        <div className='flex items-center gap-10'>
-          <Link href='/' className='flex items-center gap-1 hover:text-[#f65d4e] font-[700] relative'>Home <span className='mt-2'></span></Link>
+      <div className='hidden lg:flex items-center gap-4 '>
+        {nav.map((link) =>(
+          <>
+            <div key={link.id} className='flex items-center gap-10'>
+              <Link href={link.href} className={classNames({
+                'text-[#f65d4e] font-[700]': link.href === CurrentPath,
+                'flex items-center gap-1 font-[700] relative': link.href !== CurrentPath,
+                'hover:text-[#f65d4e]': true
+              })}>
+                {link.text}
+                <span className='mt-1'>{link.icon}</span>
+              </Link>
+            </div>
+          </>
+        ))}
+        {/* <div className='flex items-center gap-10'>
+          <Link href='/' className='flex items-center gap-1 hover:text-[#f65d4e] font-[700] relative'>Home </Link>
           <Link href='/vendor' className='flex items-center gap-1 hover:text-[#f65d4e] font-[700] relative'>Vendor <span className='mt-1'><FaChevronDown size={10}/></span></Link>
           <Link href='/pages' className='flex items-center gap-1 hover:text-[#f65d4e] font-[700] relative'>Pages <span className='mt-1'><FaChevronDown size={10}/></span></Link>
           <Link href='/blogs' className='flex items-center gap-1 hover:text-[#f65d4e] font-[700] relative'>Blogs <span className='mt-1'><FaChevronDown size={10}/></span></Link>
           <Link href='/contact' className='flex items-center gap-1 hover:text-[#f65d4e] font-[700] relative'>Contact <span className='mt-1'><FaChevronDown size={10}/></span></Link>
-        </div>
+        </div> */}
         
       </div>
       <div>
