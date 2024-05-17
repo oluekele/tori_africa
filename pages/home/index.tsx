@@ -1,6 +1,5 @@
 
 import Holiday from '@/components/holiday'
-import Slide from '@/components/libraries'
 import DotSlide from '@/components/libraries/biographies'
 import DotSlide2 from '@/components/libraries/books'
 import DotSlide3 from '@/components/libraries/fiction'
