@@ -12,7 +12,7 @@ import BG6 from '@/public/assets/h8_cate6.jpg'
 const Product = () => {
   return (
     <div className='flex flex-wrap gap-[20px] w-[90%] my-10 mx-auto'>
-      <div className='lg:w-[550px] w-[350px] overflow-hidden rounded-[16px] relative h-[300px]'>
+      <div className='lg:w-[550px] md:w-[350px] w-[100%] overflow-hidden rounded-[16px] relative h-[300px]'>
         <Link href='/' className='group'>
           <Image src={BG1} width={350} height={100} alt='fiction' className='w-full h-full group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300'/>
           <div className='absolute top-[75%] left-[5%]'>
@@ -21,16 +21,16 @@ const Product = () => {
           </div>
         </Link>
       </div>
-      <div className='lg:w-[350px] w-[300px] overflow-hidden rounded-[16px] relative h-[300px]'>
+      <div className='lg:w-[350px] md:w-[300px] w-[100%] overflow-hidden rounded-[16px] relative h-[300px]'>
         <Link href='/' className='group'>
-          <Image src={BG2} width={300} height={100} alt='fiction' className='lg:w-[350px] w-[300px] h-[300px] group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300'/>
+          <Image src={BG2} width={300} height={100} alt='fiction' className='lg:w-[350px] md:w-[300px]  w-[100%]  h-[300px] group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300'/>
           <div className='absolute top-[75%] left-[5%]'>
             <h2 className='font-bold text-[20px] transition ease-in-out delay-50 duration-300 overflow-hidden h3 '>History</h2>
               <p className='text-gray-600 h3'>2 product</p>
           </div>
         </Link>
       </div>
-      <div className='lg:w-[450px] w-[300px] overflow-hidden rounded-[16px] relative h-[300px]'>
+      <div className='lg:w-[450px] md:w-[300px]  w-[100%] overflow-hidden rounded-[16px] relative h-[300px]'>
         <Link href='/' className='group'>
           <Image src={BG3} width={450} height={100} alt='fiction' className='w-[450px] h-[300px] group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300'/>
           <div className='absolute top-[75%] left-[5%]'>
@@ -40,7 +40,7 @@ const Product = () => {
         </Link>
         
       </div>
-      <div className='w-[350px] overflow-hidden rounded-[16px] relative h-[300px]'>
+      <div className='md:w-[350px]  w-[100%]  overflow-hidden rounded-[16px] relative h-[300px]'>
         <Link href='/' className='group'>
           <Image src={BG4} width={350} height={100} alt='fiction' className='w-[350px] h-[300px] group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300'/>
           <div className='absolute top-[75%] left-[5%]'>
@@ -50,7 +50,7 @@ const Product = () => {
         </Link>
         
       </div>
-      <div className='lg:w-[550px] w-[350px] h-[300px] overflow-hidden rounded-[16px] relative'>
+      <div className='lg:w-[550px] md:w-[350px]  w-[100%]  h-[300px] overflow-hidden rounded-[16px] relative'>
         <Link href='/' className='group'>
           <Image src={BG5} width={550} height={100} alt='fiction' className=' lg:w-[550px] w-[350px] group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300 h-[300px]'/>
           <div className='absolute top-[75%] left-[5%]'>
@@ -60,9 +60,9 @@ const Product = () => {
         </Link>
         
       </div>
-      <div className='lg:w-[450px] w-[300px] h-[300px] overflow-hidden rounded-[16px] relative'>
+      <div className='lg:w-[450px] md:w-[300px]  w-[100%]  h-[300px] overflow-hidden rounded-[16px] relative'>
         <Link href='/' className='group'>
-          <Image src={BG6} width={450} height={100} alt='fiction' className=' lg:w-[450px] w-[300px] group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300 h-[300px]'/>
+          <Image src={BG6} width={450} height={100} alt='fiction' className=' lg:w-[450px] md:w-[300px]  w-[100%]  group-hover:scale-[1.05] transition ease-in-out delay-50 duration-300 h-[300px]'/>
           <div className='absolute top-[75%] left-[5%]'>
             <h2 className='font-bold text-[20px]  transition ease-in-out delay-50 duration-300 h3'>Religion</h2>
             <p className='text-gray-600'>18 product</p>

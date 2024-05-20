@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/libraries/Biographies.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/libraries/Biographies.tsx", "components/libraries/biographies/index.jsx", "components/libraries/biographies/Biographies.jsx", "components/libraries/books/index.jsx", "components/libraries/books/Books.jsx", "components/libraries/fiction/index.jsx", "components/libraries/fiction/Fiction.jsx"],
   "exclude": ["node_modules"]
 }

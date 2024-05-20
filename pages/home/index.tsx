@@ -1,12 +1,16 @@
 
 import Holiday from '@/components/holiday'
 import DotSlide from '@/components/libraries/biographies'
+import Slide from '@/components/libraries/ContentSlide'
 import DotSlide2 from '@/components/libraries/books'
 import DotSlide3 from '@/components/libraries/fiction'
 import Mockup from '@/components/mockup'
 import Product from '@/components/products.tsx'
 import Services from '@/components/services'
 import React from 'react'
+import Biographies from '@/components/libraries/biographies/Biographies'
+import Books from '@/components/libraries/books/Books'
+import Fiction from '@/components/libraries/fiction/Fiction'
 
 const HomePage = () => {
   return (
@@ -21,8 +25,8 @@ const HomePage = () => {
       <div>
         <Product />
       </div>
-      
-      <div>
+      {/* <Slide /> */}
+      {/* <div>
         <DotSlide />
       </div>
       <div>
@@ -30,7 +34,10 @@ const HomePage = () => {
       </div>
       <div>
         <DotSlide3 />
-      </div>
+      </div> */}
+      <Biographies />
+      <Books />
+      <Fiction />
       <div>
         <Holiday />
       </div>

@@ -120,6 +120,6 @@ const  Data = [
     
     pic: "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/30.jpg",
   },
-]
+ ]
 
 export default Data;
