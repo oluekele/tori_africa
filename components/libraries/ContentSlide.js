@@ -40,8 +40,8 @@ const ContentSlide = ({title}) => {
       <div className="slideshow ">
       
         <div
-          className="slideshowSlider flex md:ml-[330px] lg:ml-[450px] h-[420px]"
-          style={{ transform: `translate3d(${-index * 101}%, 0, 0)` }}
+          className="slideshowSlider flex md:ml-[330px] lg:ml-[450px] w-[93.2%] h-[420px]"
+          style={{ transform: `translate3d(${-index * 98}%, 0, 0)` }}
         >
           {Data.map((item, index) => (
             <div
@@ -49,9 +49,9 @@ const ContentSlide = ({title}) => {
               key={index}
               
             >
-              <div className=' px-3 border-r-[0.1px] border-[#00000015] lg:w-[250px] md:w-[320px] w-[400px] overflow-hidden relative'>
-                  <div className='group lg:w-[250px] md:w-[300px] w-[350px] h-[280px] overflow-hidden relative rounded-xl'>
-                    <img src={item.pic} width={400} height={280} alt='bg-1' className='object-cover z-[-1] lg:w-[250px] md:w-[300px] w-[350px] h-[280px] mb-5'/>
+              <div className=' px-3 border-r-[0.1px] border-[#00000015] lg:w-[250px] md:w-[320px] w-[380px] gap-10 overflow-hidden relative'>
+                  <div className='group lg:w-[250px] md:w-[300px] w-[90%] h-[280px] overflow-hidden relative rounded-xl'>
+                    <img src={item.pic} width={400} height={280} alt='bg-1' className='object-cover z-[-1] lg:w-[250px] md:w-[300px] w-[100%] h-[280px] mb-5'/>
                     <div className='absolute top-[25%] left-[70%] overflow-hidden translate-y-[250px]  group-hover:translate-y-[0] transition ease-in-out delay-100 duration-700'>
                       <div className='w-[50px] h-[50px] rounded-full bg-[#fff] flex items-center justify-center '>{item.heart}</div>
                       <div className='w-[50px] h-[50px] rounded-full bg-[#fff] flex items-center justify-center my-1'>{item.eye}</div>
