@@ -30,15 +30,15 @@ const Footer = () => {
             <p className='cursor-pointer hover:text-[#f65d4e] text-gray-500'>Support Center</p>
           </div>
         </div>
-        <div className='flex flex-wrap justify-between md:w-[90%] w-full lg:w-[50%] md:mt-10 mt-5 lg:mt-0'>
-          <div className='md:w-[40%] w-full lg:border-x-[0.1px] flex lg:justify-center mt-5 border-[#d3d0d036]'>
+        <div className='flex flex-wrap justify-between md:w-[90%] w-[100%] lg:w-[50%] md:mt-10 mt-5 lg:mt-0 mx-auto'>
+          <div className='md:w-[40%] w-[100%] mx-auto lg:border-x-[0.1px] flex lg:justify-center mt-5 border-[#d3d0d036] mb-5 md:-0'>
             <div>
               <Image src={logo} width={100} height={100} alt='logo' className='mt-[-10px] lg:mx-auto'/>
               <p className=' text-gray-600 pt-4 lg:pt-10 text-center md:text-[16px] text-[14px] lg:text-[18px]'>Got Questions ? Call us 24/7!</p>
               <p className='text-[#f65d4e] py-3 lg:py-5 text-[25px] lg:text-[35px]'>
                 +(84) - 1800 - 4635
               </p>
-              <div className='flex items-center lg:w-[50%] mx-auto gap-4 pt-5 text-[#fff]'>
+              <div className='flex text-[16px]  items-center lg:w-[50%] mx-auto gap-4 md:pt-5 text-[#fff]'>
                 <FaFacebookF size={20} className='cursor-pointer hover:text-[#f65d4e] text-gray-600'/>
                 <FaTwitter size={20} className='cursor-pointer hover:text-[#f65d4e] text-gray-600'/>
                 <FaInstagramSquare size={20} className='cursor-pointer hover:text-[#f65d4e] text-gray-600'/>
@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className=' flex  gap-2 md:w-[60%] w-full lg:text-[16px] text-[14px]'>
+          <div className=' flex  gap-2 md:w-[60%] w-[100%] mx-auto lg:text-[16px] text-[14px]'>
             <div className=' md:px-10 lg:text-[16px] text-[14px] '>
               <h2 className='text-[18px] pb-5 lg:pb-10'>Corporate</h2>
               <p className='cursor-pointer hover:text-[#f65d4e] text-gray-500'>Become a Vendor</p>
@@ -72,7 +72,7 @@ const Footer = () => {
        
       </div>
       <div className='w-[100%] mx-auto md:py-10 py-5 border-t-[0.1px] border-[#d3d0d036] lg:text-[16px] md:text-[14px] text-[12px] pb-4 md:pb-0'>
-        <div className='flex items-center flex-wrap justify-between w-[90%] mx-auto'>
+        <div className='flex items-center flex-wrap md:justify-between justify-center w-[90%] mx-auto'>
           <p className='flex items-center gap-2 text-[#fff]'>Copyright © {new Date().getFullYear()}  <span className='text-[#f65d4e]'>Bookory</span>. All rights reserved.</p>
           <div className='w-[50%]'>
             <Image src={Payment} width={500} height={100} alt='payment' className='w-full' />

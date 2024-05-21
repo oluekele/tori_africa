@@ -33,7 +33,7 @@ const ContentSlide = ({title}) => {
 
   return (
     <div className=''>
-      <div className='absolute top-0 left-0 flex items-center gap-6 w-[90%] mx-auto'>
+      <div className='absolute top-0 left-0 flex items-center gap-6 w-[100%] mx-auto'>
         <h3 className='font-bold w-[250px] text-[20px]'>{title}</h3>
         <div id='line' className='lg:w-[900px] md:w-[200px] h-[0.5px] bg-[#e6e6e6] '></div>
       </div>
@@ -41,7 +41,7 @@ const ContentSlide = ({title}) => {
       
         <div
           className="slideshowSlider flex md:ml-[330px] lg:ml-[450px] h-[420px]"
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+          style={{ transform: `translate3d(${-index * 101}%, 0, 0)` }}
         >
           {Data.map((item, index) => (
             <div
@@ -49,9 +49,9 @@ const ContentSlide = ({title}) => {
               key={index}
               
             >
-              <div className=' px-3 border-r-[0.1px] border-[#00000015] lg:w-[250px] md:w-[320px] w-[350px] overflow-hidden relative'>
-                  <div className='group lg:w-[250px] md:w-[300px] w-[320px] h-[280px] overflow-hidden relative rounded-xl'>
-                    <img src={item.pic} width={250} height={280} alt='bg-1' className='object-cover z-[-1] lg:w-[250px] md:w-[300px] w-[320px] h-[280px] mb-5'/>
+              <div className=' px-3 border-r-[0.1px] border-[#00000015] lg:w-[250px] md:w-[320px] w-[400px] overflow-hidden relative'>
+                  <div className='group lg:w-[250px] md:w-[300px] w-[350px] h-[280px] overflow-hidden relative rounded-xl'>
+                    <img src={item.pic} width={400} height={280} alt='bg-1' className='object-cover z-[-1] lg:w-[250px] md:w-[300px] w-[350px] h-[280px] mb-5'/>
                     <div className='absolute top-[25%] left-[70%] overflow-hidden translate-y-[250px]  group-hover:translate-y-[0] transition ease-in-out delay-100 duration-700'>
                       <div className='w-[50px] h-[50px] rounded-full bg-[#fff] flex items-center justify-center '>{item.heart}</div>
                       <div className='w-[50px] h-[50px] rounded-full bg-[#fff] flex items-center justify-center my-1'>{item.eye}</div>
