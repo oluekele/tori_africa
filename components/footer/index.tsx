@@ -30,7 +30,7 @@ const Footer = () => {
             <p className='cursor-pointer hover:text-[#f65d4e] text-gray-500'>Support Center</p>
           </div>
         </div>
-        <div className='flex flex-wrap justify-between md:w-[90%] w-[100%] lg:w-[50%] md:mt-10 mt-5 lg:mt-0 mx-auto'>
+        <div className='flex flex-wrap justify-between md:w-[90%] w-[100%] lg:w-[60%] md:mt-10 mt-5 lg:mt-0 mx-auto'>
           <div className='md:w-[40%] w-[100%] mx-auto lg:border-x-[0.1px] flex lg:justify-center mt-5 border-[#d3d0d036] mb-5 md:-0'>
             <div>
               <Image src={logo} width={100} height={100} alt='logo' className='mt-[-10px] lg:mx-auto'/>
